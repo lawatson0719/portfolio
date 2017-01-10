@@ -1,3 +1,4 @@
-body {
-	color: #fff;
-}
+@import 'basicStyles/colors';
+@import 'basicStyles/typeface';
+
+@import 'layout/home-page';

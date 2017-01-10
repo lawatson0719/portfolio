@@ -1,0 +1,92 @@
+body {
+	background-color: $bgGrey;
+}
+
+.image-container,
+.image-container img,
+.shadow {
+	-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+	clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.top-photo {
+	height: 400px;
+}
+
+.shadow {
+	z-index: 1;
+	width: 356px;
+	height: 376px;
+	background: rgba(0, 0, 0, 0.15);
+    margin: 0 auto;  
+    position: relative;
+    top: -373px;
+}
+
+.image-container {
+
+	z-index: 2;
+	background-color: $white;
+	height: 370px;
+	width: 350px;
+	margin: 0 auto;
+	position: relative;
+	margin-top: 50px;
+
+	img {
+
+		z-index: 3;	
+		height: 355px;
+		width: 340px;
+		margin: 0 auto;
+		position: absolute;
+	    top: 7px;
+	    left: 5px;
+
+	}
+}
+
+.banner-background {
+	background-image: url(../../images/straws.png);
+	height: 325px;
+	position: relative;
+	bottom: 165px;
+	box-shadow: 0 0 10px #746d6c;
+}
+
+h1, 
+h3 {
+	text-transform: uppercase;
+	color: $fontGrey;
+	text-align: center;
+	margin: 0;
+}
+h1 {
+	font-family: $advent;
+    font-weight: 500;
+    font-size: 52px;
+    padding-top: 156px;
+}
+
+h3 {
+	font-size: 24px;
+	font-family: $advent;
+	font-weight: 200;
+	padding-top: 10px;
+}
+
+.home-nav {
+	margin: 0 auto;
+	width: 645px;
+	height:130px;
+	background-color: $blueGreen;
+	-webkit-clip-path: polygon(5% 0%, 95% 0%, 100% 30%, 100% 70%, 95% 100%, 5% 100%, 0% 70%, 0% 30%);
+	clip-path: polygon(5% 0%, 95% 0%, 100% 30%, 100% 70%, 95% 100%, 5% 100%, 0% 70%, 0% 30%);
+	position: relative;
+    bottom: 219px;
+}
+
+
+
+
+
