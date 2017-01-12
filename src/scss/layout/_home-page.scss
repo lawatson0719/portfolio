@@ -1,5 +1,6 @@
 body {
 	background-color: $bgGrey;
+	overflow: hidden;
 }
 
 .image-container,
@@ -62,7 +63,7 @@ h3 {
 	margin: 0;
 }
 h1 {
-	font-family: $advent;
+	font-family: $lato;
     font-weight: 500;
     font-size: 52px;
     padding-top: 156px;
@@ -83,7 +84,73 @@ h3 {
 	-webkit-clip-path: polygon(5% 0%, 95% 0%, 100% 30%, 100% 70%, 95% 100%, 5% 100%, 0% 70%, 0% 30%);
 	clip-path: polygon(5% 0%, 95% 0%, 100% 30%, 100% 70%, 95% 100%, 5% 100%, 0% 70%, 0% 30%);
 	position: relative;
-    bottom: 219px;
+    bottom: 203px;
+  
+}
+
+ul {
+	margin: 0 auto;
+	padding: 0;
+	width: 90%;
+	
+}
+
+li {
+	list-style-type: none;
+	display: block;
+	width: 25%;
+	float: left;
+	margin-top: 15px;
+
+	.circle {
+		height: 75px;
+		width: 75px;
+		border-radius: 50%;
+		background-color: $white;
+		position: relative;
+		margin: 0 auto;
+	}
+
+	img {
+		height: 50px;
+		position: absolute;
+		opacity: .7;
+	}
+
+	a {
+		display: block;
+		width: 100%;
+		text-align: center;
+		margin-top: 5px;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: $white;
+		font-family: $lato;
+		font-weight: 100;
+		font-size: 14px;
+
+	}
+}
+
+
+#puzzle {
+	top: 15px;
+	left: 15px;
+}
+
+#info {
+	top: 14px;
+    left: 11px;
+}
+
+#page {
+	top: 13px;
+    left: 18px;
+}
+
+#envelope {
+	top: 13px;
+    left: 12px;
 }
 
 
