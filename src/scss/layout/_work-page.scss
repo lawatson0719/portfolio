@@ -1,0 +1,64 @@
+.page-title-shadow,
+.page-title-container,
+.title-shadow1,
+.title-shadow2 {
+	-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+	clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+	width: 200px;
+	height: 220px;
+	transform: rotate(-15deg);
+	position: absolute;
+	
+}
+
+.title-shadow1,
+.title-shadow2 {
+	width: 206px;
+    height: 226px;
+	background: rgba(0, 0, 0, 0.15);
+}
+
+.title-shadow1 {
+    bottom: 92px;
+    left: 35px;
+}
+
+.title-shadow2 {
+	z-index: -1;
+    bottom: 71px;
+    left: -43px;
+}
+
+.page-title-shadow {
+	background-color: #d6d6d6;
+	left: -40px;
+    bottom: 75px;
+}
+
+.page-title-container {
+	background-color: $bgLightGrey;
+	left: 37px;
+    bottom: 95px;
+}
+
+.page-title {
+	transform: rotate(15deg);
+	width: 70%;
+	margin: 0 auto;
+    top: 166px;
+    left: 16px;
+    position: relative;
+    text-transform: uppercase;
+    font: 600 24px $lato;
+    color: $fontGrey;
+    text-shadow: 0px 0px .5px $white;
+}
+
+header {
+	height: 175px;
+	position: relative;
+}
+
+.hidden		{
+	float: right;
+}

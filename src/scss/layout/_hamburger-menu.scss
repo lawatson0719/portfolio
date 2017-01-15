@@ -1,0 +1,62 @@
+.mobile {
+  width: 100%;
+  top: 0;
+
+  button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: 0;
+    text-indent: 200%;
+    overflow: hidden;
+    background:  url(../../images/burger3.png) center no-repeat ;
+    background-size: 80%;
+    width: 50px;
+    height: 55px;
+    outline: none;
+    transition: all 400ms ease;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background-color: $blueGreen; 
+    cursor: pointer;
+  }
+  
+  .expanded {
+    transform: rotate(-90deg);
+    border: 0;
+  }
+
+  .pages {
+    margin-top: 42px;
+    margin-right: 13px;
+    width: 200px;
+    float: right;
+    display: none;
+  }
+
+  .page-titles {
+    display: block;
+    font: 400 16px $lato;
+    text-transform: uppercase;
+    background: #eee;
+    text-align: center;
+    padding: 18px 0;
+    border-bottom: 1px solid #ddd;
+    text-decoration: none;
+    color: #222;
+  }
+
+}
+
+.page-titles:hover {
+    background: darken(#eee, 7%);
+}
+    
+
+
+// @media (max-width: 800px) {
+//   .mobile
+//     display: block;
+//   .desktop
+//     display: none;
+// }

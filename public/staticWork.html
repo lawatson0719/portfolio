@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LW - Work</title>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head> 
+
+<body>
+	<header>
+		<div class="page-title-shadow"></div>
+		<div class="title-shadow1"></div>
+		<div class="page-title-container">
+			<h4 class="page-title">Work</h4>
+		</div>
+		<div class="title-shadow2"></div>
+		<nav class="mobile">
+			<button></button>
+			<div class="pages">
+				<a href="./staticHome.html" class="page-titles">Home</a>
+			    <a href="./staticWork.html" class="page-titles">Work</a>
+			    <a href="./staticAbout.html" class="page-titles">About</a>
+			    <a href="./staticResume.html" class="page-titles">Resume</a>
+			    <a href="./staticContact.html" class="page-titles">Contact</a>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<section class="project-container" id="sortie">
+			<a href="" class="project-link">
+				<img class="project-image" src="./images/Sortie.png">
+			</a>
+			<div class="project-info">
+				<a href="">
+					<h4>Sortie - Group</h4>
+				</a>
+				<p>A single page application that maps and shows detailed information of all U.S. Drone strikes from 2002 - present.
+				</p>
+				<h5>Skills I Used</h5>
+				<p>HTML, CSS, Javascript, React, Experience Design</p>
+			</div>
+		</section>
+		<section class="project-container" id="star-wars">
+			<a href="" class="project-link">
+				<img class="project-image" src="./images/Starwars.png">
+			</a>
+			<div class="project-info">
+				<a href="">
+					<h4>Star Wars App - Individual</h4>
+				</a>
+				<p>Scroll through the Star Wars Gallaxy and see what resides on each Planet. ** Currently working on better functionality.</p>
+				<h5>Skills I Used</h5>
+				<p>HTML, CSS, Javascript, React</p>
+			</div>
+		</section>
+		<section class="project-container" id="marvel">
+			<a href="" class="project-link">
+				<img class="project-image" src="./images/Marvel.png">
+			</a>
+			<div class="project-info">
+				<a href="">
+					<h4>Marvel Battle App - Group</h4>
+				</a>
+				<p>Pick your battle! Select Marvel characters to go head to head in battle. ** Currently working on responsiveness</p>
+				<h5>Skills I Used</h5>
+				<p>HTML, CSS, Sketch</p>
+			</div>
+		</section>
+		<section class="project-container" id="weather">
+			<a href="" class="project-link">
+				<img class="project-image" src="./images/Weather.png">
+			</a>
+			<div class="project-info">
+				<a href="">
+					<h4>Weather App - Group</h4>
+				</a>
+				<p>View weather information in a pre-determined area.
+				</p>
+				<h5>Skills I Used</h5>
+				<p>HTML, CSS, Photoshop</p>
+			</div>
+		</section>
+		<section class="project-container" id="todos">
+			<a href="" class="project-link">
+				<img class="project-image" src="./images/Todos.png">
+			</a>
+			<div class="project-info">
+				<a href="">
+					<h4>Todos - Group</h4>
+				</a>
+				<p>A single page app that allows you to add items to a list, remove them, and mark complete or incomplete.
+				</p>
+				<h5>Skills I Used</h5>
+				<p>HTML, CSS</p>
+			</div>
+		</section>
+	</main>
+	 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$('button').click(function() {
+			$(this).toggleClass('expanded').siblings('div').slideToggle();
+		});
+	</script>
+
+</body>
+</html>
