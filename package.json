@@ -7,10 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch:js": "webpack --watch",
     "build:js": "webpack",
-    "css": "node-sass src/scss/main.scss -o dist",
-    "watch:css": "node-sass src/scss/main.scss -wo dist",
+    "css": "node-sass src/scss/main.scss -o public/dist",
+    "watch:css": "node-sass src/scss/main.scss -wo public/dist",
     "dev": "npm run watch:js & npm run watch:css & npm start",
-    "postinstall": "cp node_modules/normalize.css/normalize.css lib/"
+    "postinstall": "cp node_modules/normalize.css/normalize.css public/lib/"
   },
   "author": "",
   "license": "ISC",

@@ -1,23 +1,100 @@
-.project-image {
+.projects {
+	position: fixed;
+    margin: 0 auto;
+   left: 15vw;
+    height: 500px;
+    // bottom: 42px;
+}
+
+.project-container {
 	height: 350px;
 	width: 335px;
 	-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 	clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-	-webkit-filter: grayscale(100%); 
-    filter: grayscale(100%);
+	// -webkit-filter: grayscale(100%); 
+ //    filter: grayscale(75%);
+ 	background-color: $blueGreen;
     transition: all .2s ease-in-out;
+    text-decoration: none;
+    position: absolute;
 }
 
 
 
-.project-image:hover {
+.project-container:hover {
 	-webkit-filter: initial; 
-    filter: initial;
     transform: scale(1.1);
+    z-index: 10;
+    // background: url(../../images/Starwars.png) no-repeat top left;
+    // background-size: cover;
+  
+
+    
+    .hidden {
+    	display: block;
+    	width: 80%;
+    	margin: 0 auto;
+    	margin-top: 90px;
+  		font: 300 14px $lato;
+  		
+    }
+    .title {
+    	display: none;
+    }
 }
 
-.project-link,
-.project-info {
-	display: inline-block;
+.hidden {
+	display: none;
+	filter: brightness(100%);
 }
+
+.project-link {
+	text-decoration: none;
+	color: $white;
+	text-align: center;
+	width: 200px;
+}
+
+
+#sortie {
+	top: 0;
+	left: 0;
+}
+
+#star-wars {
+    left: 172px;
+    top: 271px;
+    background-color: $lightBlueGreen;
+}
+
+#marvel {
+    top: 0;
+    left: 344px;
+    background-color: $mediumBlueGreen;
+}
+
+#weather {
+    top: 271px;
+    left: 516px;
+    background-color: #098B95;
+}
+
+#todos {
+    top: 0;
+    left: 688px;
+    background-color: #99DCE2;
+}
+
+h4 {
+	text-transform: uppercase;
+}
+
+.title {
+	margin-top: 140px;
+	font: 100 40px $advent;
+}
+
+
+
+
 

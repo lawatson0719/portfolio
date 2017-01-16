@@ -19,6 +19,7 @@
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     background-color: $blueGreen; 
     cursor: pointer;
+    z-index: 1000;
   }
   
   .expanded {
@@ -27,11 +28,14 @@
   }
 
   .pages {
-    margin-top: 42px;
+    margin-top: 43px;
     margin-right: 13px;
     width: 200px;
     float: right;
     display: none;
+    position: absolute;
+    z-index: 1;
+    right: -4px;
   }
 
   .page-titles {
